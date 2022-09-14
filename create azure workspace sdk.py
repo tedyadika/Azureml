@@ -2,9 +2,9 @@ from azureml.core import Workspace,Datastore,Dataset
 
 
 ## create or get workspace 
-ws = Workspace.get(name='dscglobalceedamlt',
-                    subscription_id='8b20e38c-72fb-4030-a702-128e713479ca',
-                    resource_group='DSCGlobalCEEDTANLTst',
+ws = Workspace.get(name='put_workspace name',
+                    subscription_id='add id here',
+                    resource_group='add resource group name',
                     #create_resource_group=False,
                     #location='WestEurope'
                     )
@@ -13,10 +13,10 @@ ws = Workspace.get(name='dscglobalceedamlt',
 
 our_store = Datastore.register_azure_blob_container(
                                                     workspace = ws,
-                                                    datastore_name ='azure_sdk_blob',
-                                                    account_name ='dscglblceedadlstpldnsazr',
-                                                    container_name = "development",
-                                                    account_key ='11oBgHy3nyT66d/LXZTKb/fAjnvwsjzm9Z8Hzg35VrvdjSAVhFdRAmqmnBCRCAhtRjLc/j++kGTm6LH9Hjvknw==')
+                                                    datastore_name ='how do yo wanna name your store',
+                                                    account_name ='account name',
+                                                    container_name = "from which container is the data",
+                                                    account_key ='add key')
 
 ### create and register dataset
 our_store =Datastore.get(ws, 'azure_sdk_blob')

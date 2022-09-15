@@ -9,8 +9,8 @@ from azureml.core import Workspace,Datastore,Dataset,Experiment
 
 
 ## create or get workspace 
-ws = Workspace.get(name='dscglobalceedamlt',
-                    subscription_id='8b20e38c-72fb-4030-a702-128e713479ca',
+ws = Workspace.get(name='rffffefefaffht4ht',
+                    subscription_id='fffnfnfnfn02-gfffrrrr',
                     resource_group='DSCGlobalCEEDTANLTst',
                     #create_resource_group=False,
                     #location='WestEurope'
